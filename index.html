@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta de Aprendizaje en Gestión Estratégica de Datos - OLACEFS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .welcome {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 30px 40px;
+            margin: 40px;
+        }
+
+        .welcome h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .objective-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 10px;
+            padding: 40px;
+            margin: 40px;
+            text-align: center;
+        }
+
+        .objective-box h2 {
+            color: #92400e;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .objective-box p {
+            color: #78350f;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+            background: #f9fafb;
+        }
+
+        .metric-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .metric-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #3b82f6;
+            display: block;
+        }
+
+        .metric-label {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .levels-section {
+            padding: 40px;
+        }
+
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .level-card {
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .level-card.basico {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .level-card.intermedio {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .level-card.avanzado {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+
+        .level-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .level-card .credits {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .chart-section {
+            padding: 40px;
+            background: #f9fafb;
+        }
+
+        .chart-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .areas-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .area-item {
+            background: #eff6ff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .area-item strong {
+            color: #1e3a8a;
+        }
+
+        .legend {
+            background: #f0fdf4;
+            border-radius: 10px;
+            padding: 30px 40px;
+            margin: 40px;
+        }
+
+        .legend h2 {
+            color: #166534;
+            margin-bottom: 20px;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .legend-symbol {
+            font-size: 1.8em;
+            margin-right: 15px;
+        }
+
+        .legend-text strong {
+            color: #166534;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .legend-text small {
+            color: #6b7280;
+        }
+
+        .itinerary-section {
+            padding: 40px;
+        }
+
+        .level-section {
+            margin: 40px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .level-header {
+            padding: 30px 40px;
+            color: white;
+        }
+
+        .level-header.basico {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .level-header.intermedio {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .level-header.avanzado {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+
+        .level-header h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .level-header .objective {
+            opacity: 0.95;
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+
+        .level-header .credits-needed {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .level-content {
+            background: white;
+            padding: 40px;
+        }
+
+        .area-group {
+            margin-bottom: 40px;
+        }
+
+        .area-group h3 {
+            color: #1e3a8a;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .competencias {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .competencias h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .competencias ul {
+            margin-left: 20px;
+            color: #78350f;
+        }
+
+        .course-card {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #3b82f6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .course-card.troncal {
+            border-left-color: #3b82f6;
+            background: linear-gradient(to right, #eff6ff 0%, #f9fafb 100%);
+        }
+
+        .course-card.electivo {
+            border-left-color: #8b5cf6;
+            background: linear-gradient(to right, #f5f3ff 0%, #f9fafb 100%);
+        }
+
+        .course-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .course-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .course-title {
+            flex: 1;
+        }
+
+        .course-title h4 {
+            color: #1e3a8a;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .course-meta {
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+
+        .course-credits {
+            background: #3b82f6;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .course-description {
+            color: #4b5563;
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+
+        .course-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .course-link:hover {
+            background: #2563eb;
+        }
+
+        .course-link::before {
+            content: "\ud83d\udcdd ";
+        }
+
+        .gaps-section {
+            background: #fef2f2;
+            padding: 40px;
+            margin: 40px;
+            border-radius: 15px;
+            border: 2px solid #fecaca;
+        }
+
+        .gaps-section h2 {
+            color: #991b1b;
+            margin-bottom: 20px;
+        }
+
+        .gap-card {
+            background: white;
+            border-left: 5px solid #ef4444;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .gap-card h4 {
+            color: #991b1b;
+            margin-bottom: 10px;
+        }
+
+        .gap-card .credits {
+            display: inline-block;
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .gap-card .status {
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .progress-section {
+            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
+            padding: 40px;
+            margin: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .progress-section h2 {
+            color: #4c1d95;
+            margin-bottom: 30px;
+        }
+
+        .progress-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .progress-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .progress-table th {
+            background: #4c1d95;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .progress-table td {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .progress-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .progress-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+            opacity: 0.8;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+            margin: 40px 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RUTA DE APRENDIZAJE EN GESTIÓN ESTRATÉGICA DE DATOS</h1>
+            <div class="subtitle">Versión 1.0 - Fuerza de Tarea TICs de OLACEFS</div>
+        </header>
+
+        <div class="welcome">
+            <h2>¡Bienvenido/a!</h2>
+            <p>Este documento es el mapa que te guiará por la <strong>Ruta de Aprendizaje en Gestión Estratégica de Datos</strong>, diseñada para fortalecer tus capacidades para transformar datos en evidencia y lograr auditorías de alto impacto.</p>
+            <p>Esta ruta está diseñada para guiarte de manera progresiva a través de <strong>tres niveles de competencia</strong>: desde los fundamentos esenciales hasta la aplicación de técnicas analíticas avanzadas.</p>
+            <p><strong>Navega</strong> por los distintos niveles, <strong>completa</strong> los cursos troncales para construir una base sólida y <strong>elige</strong> los cursos electivos que mejor se alineen con tus intereses y las necesidades de tu EFS.</p>
+            <p style="margin-top: 20px; font-weight: bold; color: #1e3a8a;">¡Buen estudio!</p>
+        </div>
+
+        <div class="objective-box">
+            <h2>OBJETIVO ESTRATÉGICO</h2>
+            <p>Fortalecer las capacidades de las Entidades Fiscalizadoras Superiores para <strong>transformar datos en evidencia de auditoría de alto impacto</strong>, permitiendo la detección de riesgos y anomalías, la evaluación de políticas públicas y la ejecución de un control gubernamental más profundo y eficiente.</p>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <span class="metric-number">52.5</span>
+                <div class="metric-label">créditos totales</div>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">5</span>
+                <div class="metric-label">áreas de competencia</div>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">50</span>
+                <div class="metric-label">resultados de aprendizaje</div>
+            </div>
+        </div>
+
+        <div class="levels-section">
+            <h2 style="text-align: center; color: #1e3a8a; font-size: 2em; margin-bottom: 10px;">ESTRUCTURA PROGRESIVA DEL APRENDIZAJE</h2>
+            <div class="levels-grid">
+                <div class="level-card basico">
+                    <h3>Nivel Básico</h3>
+                    <div class="credits">15</div>
+                    <div>Créditos</div>
+                </div>
+                <div class="level-card intermedio">
+                    <h3>Nivel Intermedio</h3>
+                    <div class="credits">20</div>
+                    <div>Créditos</div>
+                </div>
+                <div class="level-card avanzado">
+                    <h3>Nivel Avanzado</h3>
+                    <div class="credits">17.5</div>
+                    <div>Créditos</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>FOCO DE LA RUTA DE APRENDIZAJE</h2>
+            <div class="chart-container">
+                <p style="text-align: center; color: #6b7280; margin-bottom: 20px;">El currículo de esta Ruta mantiene un <strong>balance en sus áreas clave</strong>, con énfasis en el análisis práctico de datos, la gobernanza de información y la aplicación de IA.</p>
+                <div class="areas-list">
+                    <div class="area-item">
+                        <strong>Área 1:</strong> Comprensión y uso de datos abiertos - 10 LOs
+                    </div>
+                    <div class="area-item">
+                        <strong>Área 2:</strong> Fundamentos y técnicas de análisis de datos - 10 LOs
+                    </div>
+                    <div class="area-item">
+                        <strong>Área 3:</strong> Estadística aplicada y análisis exploratorio - 10 LOs
+                    </div>
+                    <div class="area-item">
+                        <strong>Área 4:</strong> Herramientas tecnológicas (Python, SQL, Colab) - 10 LOs
+                    </div>
+                    <div class="area-item" style="grid-column: span 2;">
+                        <strong>Área 5:</strong> Introducción a Inteligencia Artificial - 10 LOs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h2>LEYENDA DE SÍMBOLOS</h2>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-symbol">🔵</div>
+                    <div class="legend-text">
+                        <strong>Troncal</strong>
+                        <small>Curso obligatorio para completar el nivel</small>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-symbol">⚪</div>
+                    <div class="legend-text">
+                        <strong>Electivo</strong>
+                        <small>Curso opcional para especialización</small>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-symbol">🏢</div>
+                    <div class="legend-text">
+                        <strong>Interno</strong>
+                        <small>Curso ofrecido por OLACEFS o una EFS miembro</small>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-symbol">🌐</div>
+                    <div class="legend-text">
+                        <strong>Externo</strong>
+                        <small>Curso ofrecido por un socio de cooperación</small>
+                    </div>
+                </div>
+            </div>
+            <div class="legend-item" style="margin-top: 15px;">
+                <div class="legend-symbol">🛠️</div>
+                <div class="legend-text">
+                    <strong>En Desarrollo</strong>
+                    <small>Área para la cual se está creando o buscando contenido formativo</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="itinerary-section">
+            <h2 style="text-align: center; color: #1e3a8a; font-size: 2.5em; margin-bottom: 40px;">ITINERARIO FORMATIVO</h2>
+
+            <!-- NIVEL BÁSICO -->
+            <div class="level-section">
+                <div class="level-header basico">
+                    <h2>NIVEL BÁSICO: Fundamento para el auditor de datos</h2>
+                    <div class="objective">
+                        <strong>Objetivo:</strong> Comprender el ciclo de vida de los datos, aplicar técnicas de análisis descriptivo y utilizar herramientas básicas para la extracción y manipulación de información estructurada.
+                    </div>
+                    <div class="credits-needed">
+                        Créditos para completar el nivel: 15 créditos OLACEFS
+                    </div>
+                </div>
+                <div class="level-content">
+                    <div class="area-group">
+                        <h3>ÁREA 1 Y 2: FUNDAMENTOS DE DATOS Y ANÁLISIS</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Aplicar principios de datos abiertos (LO 1.1)</li>
+                                <li>Diferenciar formatos de datos estructurados y no estructurados (LO 1.2)</li>
+                                <li>Aplicar criterios de calidad de datos (LO 1.3)</li>
+                                <li>Comprender el ciclo de vida del análisis de datos (LO 2.1)</li>
+                                <li>Aplicar limpieza básica de datos (LO 2.2)</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card troncal">
+                            <div class="course-header">
+                                <div class="course-icon">🔵 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-001: Introducción a la Ciencia de Datos para el Control</h4>
+                                    <div class="course-meta">Interno - Contraloría General del Estado (Ecuador)</div>
+                                </div>
+                                <div class="course-credits">11 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                Cubre los LOs 1.1, 1.2, 1.3, 2.1 y 2.2, proporcionando una visión integral del ecosistema de datos en la fiscalización. Curso fundamental con 40 horas de contacto directo y 110 horas de esfuerzo total estimado.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_Introd_CsDatos - Ecuador.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area-group">
+                        <h3>ÁREA 3: ESTADÍSTICA DESCRIPTIVA</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Calcular e interpretar medidas de tendencia central (LO 3.1)</li>
+                                <li>Construir histogramas y diagramas de caja (LO 3.2)</li>
+                                <li>Interpretar correlaciones (LO 3.3)</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card electivo">
+                            <div class="course-header">
+                                <div class="course-icon">⚪ 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-003: Análisis de Datos 1</h4>
+                                    <div class="course-meta">Interno - Auditoría General de la Nación (Argentina) | MOOC</div>
+                                </div>
+                                <div class="course-credits">5.5 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                MOOC que cubre estadística descriptiva, datos abiertos y análisis exploratorio con Python. Modalidad virtual asincrónica con 20 horas de contacto y 55 horas de esfuerzo total.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_Analisis de datos 1 Arg.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                                <a href="docs/fichas-cursos/P_CIENCIA DE DATOS para auditores 1.pdf" class="course-link" target="_blank" style="margin-left: 10px;">Ver Programa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area-group">
+                        <h3>ÁREA 4: HERRAMIENTAS ESENCIALES</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Usar sentencias SQL básicas (LO 4.2)</li>
+                                <li>Operar en un notebook de Google Colab (LO 4.3)</li>
+                                <li>Aplicar Pandas en Python para análisis básico (LO 4.1)</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card troncal">
+                            <div class="course-header">
+                                <div class="course-icon">🔵 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-002: Introducción a Python</h4>
+                                    <div class="course-meta">Interno - Contraloría General de la República (Chile)</div>
+                                </div>
+                                <div class="course-credits">4.5 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                Curso práctico que desarrolla habilidades instrumentales básicas de programación en Python para análisis de datos. Cubre los LOs 4.1, 4.2 y 4.3 con enfoque hands-on.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_ Introducción a Python - Chile.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                                <a href="docs/fichas-cursos/P_ Introducción a Python CHILE.pdf" class="course-link" target="_blank" style="margin-left: 10px;">Ver Programa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NIVEL INTERMEDIO -->
+            <div class="level-section">
+                <div class="level-header intermedio">
+                    <h2>NIVEL INTERMEDIO: Análisis avanzado y herramientas especializadas</h2>
+                    <div class="objective">
+                        <strong>Objetivo:</strong> Profundizar en técnicas de análisis de datos, dominar SQL avanzado, crear visualizaciones efectivas y aplicar estadística inferencial para auditorías.
+                    </div>
+                    <div class="credits-needed">
+                        Créditos para completar el nivel: 20 créditos OLACEFS
+                    </div>
+                </div>
+                <div class="level-content">
+                    <div class="area-group">
+                        <h3>ÁREA 2 Y 4: ANÁLISIS Y SQL AVANZADO</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Escribir consultas SQL con JOIN, GROUP BY y subqueries (LO 4.5)</li>
+                                <li>Combinar datos de múltiples fuentes con Pandas (LO 4.4)</li>
+                                <li>Analizar relaciones entre variables (LO 2.4)</li>
+                                <li>Construir visualizaciones efectivas (LO 2.5)</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card troncal">
+                            <div class="course-header">
+                                <div class="course-icon">🔵 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-004: Análisis de Datos 2</h4>
+                                    <div class="course-meta">Interno - Auditoría General de la Nación (Argentina) | MOOC</div>
+                                </div>
+                                <div class="course-credits">6 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                MOOC que profundiza en administración de datos, SQL y su integración con Python para auditorías. Cubre los LOs 2.1-2.6, 4.4 y 4.5 con énfasis en análisis exploratorio y limpieza de datos.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_Analisis de datos 2 Arg.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                                <a href="docs/fichas-cursos/P_CIENCIA DE DATOS 2.pdf" class="course-link" target="_blank" style="margin-left: 10px;">Ver Programa</a>
+                            </div>
+                        </div>
+
+                        <div class="course-card electivo">
+                            <div class="course-header">
+                                <div class="course-icon">⚪ 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-006: Análisis de Datos y Auditorías basadas en tecnologías</h4>
+                                    <div class="course-meta">Interno - Corte de Cuentas de la República (El Salvador) | En diseño</div>
+                                </div>
+                                <div class="course-credits">11.5 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                Curso extenso que incluye fundamentos de análisis, ETL, Python y Power BI aplicado a auditorías. Abarca Ciencia de Datos, Estadística y herramientas de visualización. 40 horas de contacto, 115 horas totales.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_ Analisis de datos y tecnologia basada en auditorias el Salvador (2).pdf" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area-group">
+                        <h3>ÁREA 3: ESTADÍSTICA INFERENCIAL</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Descomponer series de tiempo (LO 3.4)</li>
+                                <li>Aplicar pruebas de hipótesis (LO 3.5)</li>
+                                <li>Evaluar representatividad de muestras (LO 3.6)</li>
+                            </ul>
+                        </div>
+
+                        <p style="color: #6b7280; padding: 20px; background: #f9fafb; border-radius: 8px; margin-top: 15px;">
+                            <strong>Nota:</strong> El curso GED-004 mencionado arriba también incluye componentes estadísticos intermedios que cubren estos LOs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NIVEL AVANZADO -->
+            <div class="level-section">
+                <div class="level-header avanzado">
+                    <h2>NIVEL AVANZADO: Especialización y técnicas emergentes</h2>
+                    <div class="objective">
+                        <strong>Objetivo:</strong> Dominar técnicas analíticas avanzadas, crear pipelines de datos, aplicar IA y desarrollar marcos estratégicos para la gestión de datos en la EFS.
+                    </div>
+                    <div class="credits-needed">
+                        Créditos para completar el nivel: 17.5 créditos OLACEFS
+                    </div>
+                </div>
+                <div class="level-content">
+                    <div class="area-group">
+                        <h3>ÁREA 2, 3 Y 4: ANÁLISIS AVANZADO Y AUTOMATIZACIÓN</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Desarrollar dashboards interactivos (LO 2.8)</li>
+                                <li>Diseñar indicadores compuestos (LO 3.7)</li>
+                                <li>Formular modelos de regresión múltiple (LO 3.8)</li>
+                                <li>Desarrollar librerías de funciones en Python (LO 4.7)</li>
+                                <li>Crear scripts de análisis reproducibles (LO 3.9)</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card troncal">
+                            <div class="course-header">
+                                <div class="course-icon">🔵 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-005: Análisis de Datos 3</h4>
+                                    <div class="course-meta">Interno - Auditoría General de la Nación (Argentina) | MOOC</div>
+                                </div>
+                                <div class="course-credits">7 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                MOOC avanzado con modelado de datos, visualización avanzada y proyectos aplicados. Mayor complejidad por la inclusión de proyectos prácticos integradores. 70 horas de esfuerzo total estimado.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_Analisis de datos 3 Arg.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                                <a href="docs/fichas-cursos/Diseño e Implementación del Curso Ciencias de Datos 3_1.pdf" class="course-link" target="_blank" style="margin-left: 10px;">Ver Programa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area-group">
+                        <h3>ÁREA 4 Y 5: HERRAMIENTAS GEOESPACIALES E IA</h3>
+                        <div class="competencias">
+                            <h4>Competencias a desarrollar:</h4>
+                            <ul>
+                                <li>Aplicar algoritmos de clustering (LO 5.4)</li>
+                                <li>Entrenar modelos de clasificación (LO 5.5)</li>
+                                <li>Interpretar resultados de modelos ML (LO 5.6)</li>
+                                <li>Aplicar herramientas geotecnológicas para control fiscal</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-card electivo">
+                            <div class="course-header">
+                                <div class="course-icon">⚪ 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-007: OpenGeoHub 2025 - Formación de especialistas en geocontrol</h4>
+                                    <div class="course-meta">Interno - Tribunal de Contas da União - TCU (Brasil)</div>
+                                </div>
+                                <div class="course-credits">4 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                Curso especializado en análisis geoespacial con BigQuery y SIG aplicado al control fiscal. Incluye datos vectoriales, operaciones espaciales y análisis territorial. 15 horas de contacto, 40 horas totales.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_OpenGeoHub - Brasil.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                            </div>
+                        </div>
+
+                        <div class="course-card electivo">
+                            <div class="course-header">
+                                <div class="course-icon">⚪ 🏢</div>
+                                <div class="course-title">
+                                    <h4>GED-008: Panoptes 2025 - Gobernanza Territorial y Fundiaria</h4>
+                                    <div class="course-meta">Interno - Tribunal de Contas da União - TCU (Brasil)</div>
+                                </div>
+                                <div class="course-credits">3 créditos</div>
+                            </div>
+                            <div class="course-description">
+                                Curso especializado en análisis de tenencia de tierra, catastro y modelado predictivo de uso del suelo. Orientado a auditorías ambientales y territoriales. 10 horas de contacto, 30 horas totales.
+                                <br>
+                                <a href="docs/fichas-cursos/FT_ Panoptes - Brasil.docx" class="course-link" target="_blank">Ver Ficha Técnica</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gaps-section">
+            <h2>🛠️ ÁREAS DE ESPECIALIZACIÓN FUTURA</h2>
+            <p style="margin-bottom: 30px; color: #6b7280;">Competencias identificadas que requieren desarrollo de contenido:</p>
+
+            <div class="gap-card">
+                <h4>Análisis de redes y grafos para detección de colusión</h4>
+                <div class="credits">5.0 créditos estimados</div>
+                <p><strong>Brecha:</strong> LO 2.9 - Idear esquemas analíticos avanzados para detección de redes de colusión en contratación pública.</p>
+                <p class="status">Estado: En búsqueda activa de socio de cooperación o desarrollo interno.</p>
+            </div>
+
+            <div class="gap-card">
+                <h4>Modelos predictivos con regresión múltiple</h4>
+                <div class="credits">4.0 créditos estimados</div>
+                <p><strong>Brecha:</strong> LO 3.8 - Formular modelos de regresión múltiple para predicción en auditorías.</p>
+                <p class="status">Estado: Desarrollo interno futuro.</p>
+            </div>
+
+            <div class="gap-card">
+                <h4>Control de versiones con Git</h4>
+                <div class="credits">3.0 créditos estimados</div>
+                <p><strong>Brecha:</strong> LO 4.6 - Utilizar sistemas de control de versiones para proyectos colaborativos.</p>
+                <p class="status">Estado: <strong style="color: #991b1b;">PRIORITARIO</strong> - Búsqueda de curso externo o desarrollo urgente.</p>
+            </div>
+
+            <div class="gap-card">
+                <h4>Procesamiento de Lenguaje Natural (NLP)</h4>
+                <div class="credits">6.0 créditos estimados</div>
+                <p><strong>Brecha:</strong> LO 5.9 - Desarrollar modelos de NLP para clasificación de documentos no estructurados.</p>
+                <p class="status">Estado: Búsqueda de socio de cooperación especializado.</p>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <h2>RESUMEN DE PROGRESO</h2>
+            <p style="margin-bottom: 30px; color: #4c1d95;">A medida que avances en la ruta, acumularás créditos que te permitirán certificar tu nivel de competencia:</p>
+
+            <div class="progress-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Créditos Acumulados</th>
+                            <th>Certificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: bold; color: #059669;">Básico</td>
+                            <td>15+ créditos</td>
+                            <td>Certificado Nivel Básico en GED</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: #d97706;">Intermedio</td>
+                            <td>35+ créditos</td>
+                            <td>Certificado Nivel Intermedio en GED</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold; color: #dc2626;">Avanzado</td>
+                            <td>52.5+ créditos</td>
+                            <td style="font-weight: bold; color: #dc2626;">Certificación Completa en Gestión Estratégica de Datos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="background: #eff6ff; padding: 40px; margin: 40px; border-radius: 15px;">
+            <h2 style="color: #1e3a8a; text-align: center; margin-bottom: 30px;">PRÓXIMOS PASOS</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; gap: 15px;">
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                        <strong>1. Evalúa tu nivel actual</strong> revisando los LOs de cada área
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                        <strong>2. Identifica los cursos</strong> que mejor se ajusten a tus necesidades
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                        <strong>3. Inscríbete en los cursos troncales</strong> de tu nivel
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                        <strong>4. Complementa con cursos electivos</strong> según tus intereses
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                        <strong>5. Acumula créditos</strong> y certifica tu progreso
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3 style="margin-bottom: 20px;">CONTACTO Y SOPORTE</h3>
+            <p>Para más información sobre la Ruta de Aprendizaje en Gestión Estratégica de Datos:</p>
+            <p><strong>Comité de Creación de Capacidades (CCC) de OLACEFS</strong></p>
+            <p><strong>Fuerza de Tarea TICs</strong></p>
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p><strong>Documento generado en:</strong> Mayo 2025</p>
+                <p><strong>Versión:</strong> 1.0</p>
+                <p><strong>Estado:</strong> En desarrollo continuo</p>
+                <p style="margin-top: 20px; font-size: 0.9em; font-style: italic;">
+                    Este documento es parte del Sistema de Rutas de Aprendizaje de OLACEFS y sigue la metodología establecida en la "Guía para llevar adelante el mapeo curricular y asignación de créditos para la construcción de Rutas de Aprendizaje".
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

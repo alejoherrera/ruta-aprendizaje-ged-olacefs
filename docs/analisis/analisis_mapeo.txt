@@ -1,0 +1,36 @@
+=== ANÁLISIS DE LA MATRIZ DE ALINEACIÓN LO-CURSO ===
+CURSOS EN LA MATRIZ:
+  Col 3: GED 001
+Introducción a la Ciencia de Datos para el Control- Ecuador
+  Col 4: GED 003
+ Análisis de Datos 1 - ARG
+  Col 5: GED 004
+Análisis de Datos 2- ARG
+  Col 6: GED 005
+Análisis de Datos 3- ARG
+  Col 7: GED 006
+Análisis de Datos y Auditorías basadas en tecnologías - El Salvador
+  Col 8: GED 007
+OpenGeoHub 2025 - Formación de especialistas en geocontrol - Brasil
+  Col 9: GED 008
+Panoptes 2025 - Gobernanza Territorial y Fundiaria Brasil
+
+=== COBERTURA DE LOS ===
+
+Área 1: Comprensión y uso de datos abiertos y estructurados
+  1.1 Aplicar las cuatro características de los datos abiertos (principi... [CUBIERTO: 6 cursos]
+  1.2 Aplicar y diferenciar entre formatos de datos estructurados (ej: C... [CUBIERTO: 7 cursos]
+  1.10 Diseñar un marco estratégico para la adopción de metodologías eme... [CUBIERTO: 1 cursos]
+
+Área 2: Fundamentos y técnicas de análisis de datos
+  2.1 Aplicar las etapas del ciclo de vida del análisis de datos (desde ... [CUBIERTO: 7 cursos]
+  2.2 Aplicar un proceso de limpieza y transformación de datos para conv... [CUBIERTO: 7 cursos]
+  2.10 Formular una hoja de ruta plurianual para la adopción de técnicas... [SIN COBERTURA]
+
+Área 3: Estadística aplicada y análisis exploratorio
+  3.1 Calcular e interpretar las medidas de tendencia central (media, me... [CUBIERTO: 6 cursos]
+  3.10 Establecer la visión para un marco estadístico institucional que ... [CUBIERTO: 1 cursos]
+
+Área 4: Uso de herramientas tecnológicas para análisis (Python, SQL, Google Colab)
+  4.1 Aplicar la librería Pandas en Python para cargar, inspeccionar y f... [CUBIERTO: 5 cursos]
+  4.10 Proponer un plan de modernización tecnológica en el área de análi... [CUBIERTO: 1 cursos]

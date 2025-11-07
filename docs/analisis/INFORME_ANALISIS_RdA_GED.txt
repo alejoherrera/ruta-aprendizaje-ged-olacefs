@@ -1,0 +1,550 @@
+================================================================================
+INFORME DE ANÁLISIS COMPLETO
+RUTA DE APRENDIZAJE: GESTIÓN ESTRATÉGICA DE DATOS (GED)
+================================================================================
+
+Fecha: Mayo 2025
+Elaborado para: Alejandro - EFS Costa Rica
+Fuerza de Tarea: TICs - OLACEFS
+
+================================================================================
+1. RESUMEN EJECUTIVO
+================================================================================
+
+Este informe presenta el análisis completo del mapeo curricular, asignación
+de créditos y identificación de brechas para la Ruta de Aprendizaje en
+Gestión Estratégica de Datos (GED), siguiendo la metodología establecida
+en la "Guía para llevar adelante el mapeo curricular y asignación de créditos".
+
+DATOS PRINCIPALES:
+- Total de Resultados de Aprendizaje (LOs): 50 (distribuidos en 5 áreas)
+- Total de cursos en el COA: 8 cursos
+- Total de créditos OLACEFS: 52.5 créditos
+- Brechas identificadas: 9 brechas (1 total, 5 de profundidad, 3 de evaluación)
+- Cobertura estimada: 82% (41 LOs con algún nivel de cobertura)
+
+================================================================================
+2. CATÁLOGO DE OPORTUNIDADES DE APRENDIZAJE (COA)
+================================================================================
+
+2.1 CURSOS IDENTIFICADOS
+-------------------------
+
+GED-001: Introducción a la Ciencia de Datos para el Control
+- Proveedor: Contraloría General del Estado (Ecuador)
+- Duración: 40 horas declaradas
+- Créditos OLACEFS: 11 créditos
+- Esfuerzo total: 110 horas (40h contacto + 60h trabajo indep. + 10h eval.)
+- LOs cubiertos: 1.1, 1.2, 1.3, 2.1, 2.2, 3.1, 3.2
+- Nivel: Básico
+
+GED-002: Introducción a Python
+- Proveedor: Contraloría General de la República (Chile)
+- Duración: 16 horas declaradas
+- Créditos OLACEFS: 4.5 créditos
+- Esfuerzo total: 45 horas (16h contacto + 24h trabajo indep. + 5h eval.)
+- LOs cubiertos: 4.1, 4.2, 4.3
+- Nivel: Básico
+
+GED-003: Análisis de Datos 1
+- Proveedor: AGN (Argentina)
+- Duración: 20 horas declaradas
+- Modalidad: MOOC
+- Créditos OLACEFS: 5.5 créditos
+- Esfuerzo total: 55 horas (20h contacto + 30h trabajo indep. + 5h eval.)
+- LOs cubiertos: 1.1, 1.2, 1.3, 2.1, 2.2, 3.1, 3.2, 3.3
+- Nivel: Básico-Intermedio
+
+GED-004: Análisis de Datos 2
+- Proveedor: AGN (Argentina)
+- Duración: 20 horas declaradas
+- Modalidad: MOOC
+- Créditos OLACEFS: 6 créditos
+- Esfuerzo total: 60 horas (20h contacto + 35h trabajo indep. + 5h eval.)
+- LOs cubiertos: 2.1-2.6, 4.4, 4.5
+- Contenido: SQL, Python, administración de datos para auditorías
+- Nivel: Intermedio
+
+GED-005: Análisis de Datos 3
+- Proveedor: AGN (Argentina)
+- Duración: 20 horas declaradas (estimadas)
+- Modalidad: MOOC
+- Créditos OLACEFS: 7 créditos
+- Esfuerzo total: 70 horas (20h contacto + 40h trabajo indep. + 10h eval.)
+- Nivel: Avanzado
+- Nota: Mayor complejidad por proyectos y modelado
+
+GED-006: Análisis de Datos y Auditorías basadas en tecnologías
+- Proveedor: Corte de Cuentas (El Salvador) - En diseño
+- Duración: 40 horas declaradas
+- Créditos OLACEFS: 11.5 créditos
+- Esfuerzo total: 115 horas (40h contacto + 60h trabajo indep. + 15h eval.)
+- Contenido: Ciencia de Datos, Estadística, ETL, Python, Power BI
+- Nivel: Intermedio-Avanzado
+
+GED-007: OpenGeoHub 2025 - Formación de especialistas en geocontrol
+- Proveedor: Tribunal de Contas da União - TCU (Brasil)
+- Duración: 15 horas declaradas
+- Créditos OLACEFS: 4 créditos
+- Esfuerzo total: 40 horas (15h contacto + 20h trabajo indep. + 5h eval.)
+- Contenido: Datos vectoriales, operaciones SIG, BigQuery
+- Nivel: Avanzado (especializado)
+
+GED-008: Panoptes 2025 - Gobernanza Territorial y Fundiaria
+- Proveedor: Tribunal de Contas da União - TCU (Brasil)
+- Duración: 10 horas declaradas
+- Créditos OLACEFS: 3 créditos
+- Esfuerzo total: 30 horas (10h contacto + 15h trabajo indep. + 5h eval.)
+- Contenido: Catastro, dinámica uso del suelo, modelado predictivo
+- Nivel: Avanzado (especializado)
+
+TOTAL: 52.5 créditos OLACEFS
+
+2.2 DISTRIBUCIÓN DE CURSOS POR PROVEEDOR
+-----------------------------------------
+- Argentina (AGN): 3 cursos (19.5 créditos)
+- Brasil (TCU): 2 cursos (7 créditos)
+- Chile (CGR): 1 curso (4.5 créditos)
+- Ecuador (CGE): 1 curso (11 créditos)
+- El Salvador (CCR): 1 curso (11.5 créditos)
+
+2.3 DISTRIBUCIÓN POR MODALIDAD
+-------------------------------
+- MOOC/Virtual: 6 cursos
+- Presencial/Híbrido: 0 cursos
+- En diseño: 1 curso (GED-006)
+
+================================================================================
+3. MATRIZ DE RESULTADOS DE APRENDIZAJE
+================================================================================
+
+3.1 ÁREA 1: COMPRENSIÓN Y USO DE DATOS ABIERTOS (10 LOs)
+---------------------------------------------------------
+
+Nivel Básico:
+1.1 Aplicar las 4 características de datos abiertos (principios FAIR)
+    → Cobertura: BUENA (múltiples cursos nivel I, R, A)
+
+1.2 Diferenciar formatos estructurados vs no estructurados
+    → Cobertura: BUENA (múltiples cursos nivel I, R, A)
+
+1.3 Aplicar criterios de calidad, pertinencia y fiabilidad de datos
+    → Cobertura: ADECUADA (nivel I, R en varios cursos)
+
+Nivel Intermedio:
+1.4 Analizar datos públicos para identificar problemas de calidad
+    → Cobertura: ADECUADA (nivel R, A)
+
+1.5 Evaluar fiabilidad de datos internos vs externos
+    → Cobertura: ADECUADA (nivel R, A)
+
+1.6 Argumentar implicaciones éticas y de privacidad
+    → Cobertura: LIMITADA (nivel I, M en pocos cursos)
+
+Nivel Avanzado:
+1.7 Diseñar estrategia integral de adopción de datos abiertos
+    → Cobertura: LIMITADA (solo nivel I, R en 1 curso)
+    → BRECHA DE PROFUNDIDAD identificada
+
+1.8 Estructurar marco de gobernanza de datos para EFS
+    → Cobertura: LIMITADA (solo nivel I, R)
+    → BRECHA DE PROFUNDIDAD identificada
+
+1.9 Formular diseño de sistema de alertas tempranas
+    → Cobertura: MÍNIMA (solo 1 curso)
+    → BRECHA DE PROFUNDIDAD identificada
+
+1.10 Diseñar marco estratégico para metodologías emergentes
+     → Cobertura: MÍNIMA (solo 1 curso)
+     → BRECHA DE PROFUNDIDAD identificada
+
+3.2 ÁREA 2: FUNDAMENTOS Y TÉCNICAS DE ANÁLISIS DE DATOS (10 LOs)
+-----------------------------------------------------------------
+
+Nivel Básico:
+2.1 Aplicar etapas del ciclo de vida del análisis de datos
+    → Cobertura: EXCELENTE (múltiples cursos I, R, M, A)
+
+2.2 Aplicar limpieza y transformación de datos
+    → Cobertura: EXCELENTE (múltiples cursos I, R, M, A)
+
+2.3 Interpretar tendencias, estacionalidad y valores atípicos
+    → Cobertura: BUENA (nivel I, R)
+
+Nivel Intermedio:
+2.4 Analizar relaciones entre variables (correlación, tablas contingencia)
+    → Cobertura: BUENA (nivel R, A)
+
+2.5 Construir visualizaciones efectivas de hallazgos
+    → Cobertura: EXCELENTE (nivel I, R, M, A)
+
+2.6 Analizar resultados de análisis exploratorio para formular hipótesis
+    → Cobertura: ADECUADA (nivel R, A)
+
+Nivel Avanzado:
+2.7 Formular tipo de modelo analítico apropiado (descriptivo/predictivo)
+    → Cobertura: ADECUADA (nivel R, M en 1-2 cursos)
+
+2.8 Desarrollar dashboard interactivo
+    → Cobertura: ADECUADA (nivel R, M en GED-006)
+
+2.9 Idear esquema analítico para detección de redes de colusión (grafos)
+    → BRECHA TOTAL - No cubierto
+    → Prioridad: IMPORTANTE
+
+2.10 Formular hoja de ruta plurianual para técnicas emergentes
+     → BRECHA TOTAL o MÍNIMA cobertura
+     → Prioridad: DESEABLE
+
+3.3 ÁREA 3: ESTADÍSTICA APLICADA (10 LOs)
+------------------------------------------
+
+Nivel Básico:
+3.1 Calcular medidas de tendencia central y dispersión
+    → Cobertura: EXCELENTE (múltiples cursos I, R, A)
+
+3.2 Construir histogramas y diagramas de caja
+    → Cobertura: BUENA (nivel I, R, A)
+
+3.3 Interpretar correlaciones (coeficiente, p-valor)
+    → Cobertura: BUENA (nivel I, R, A)
+
+Nivel Intermedio:
+3.4 Descomponer series de tiempo
+    → Cobertura: ADECUADA (nivel R)
+
+3.5 Aplicar pruebas de hipótesis
+    → Cobertura: ADECUADA (nivel R, A)
+
+3.6 Evaluar representatividad de muestras
+    → Cobertura: ADECUADA (nivel R)
+
+Nivel Avanzado:
+3.7 Diseñar indicador compuesto
+    → Cobertura: LIMITADA (nivel I, R)
+    → BRECHA DE PROFUNDIDAD
+
+3.8 Formular modelo de regresión múltiple
+    → BRECHA TOTAL o muy limitada
+    → Prioridad: DESEABLE
+
+3.9 Crear script de análisis reproducible
+    → Cobertura: ADECUADA (nivel R, M)
+
+3.10 Establecer marco estadístico institucional
+     → Cobertura: MÍNIMA
+     → BRECHA DE PROFUNDIDAD
+
+3.4 ÁREA 4: HERRAMIENTAS TECNOLÓGICAS (10 LOs)
+-----------------------------------------------
+
+Nivel Básico:
+4.1 Aplicar Pandas para cargar/inspeccionar/filtrar CSV
+    → Cobertura: EXCELENTE (múltiples cursos I, R, A)
+
+4.2 Aplicar SQL básico (SELECT, FROM, WHERE)
+    → Cobertura: EXCELENTE (múltiples cursos I, R, A)
+
+4.3 Ejecutar notebooks de Google Colab
+    → Cobertura: BUENA (nivel I, R)
+
+Nivel Intermedio:
+4.4 Implementar script para combinar datos de múltiples fuentes
+    → Cobertura: BUENA (nivel R, M)
+
+4.5 Escribir consultas SQL avanzadas (JOIN, GROUP BY, subqueries)
+    → Cobertura: EXCELENTE (nivel I, R, M, A)
+
+4.6 Utilizar sistema de control de versiones (Git)
+    → BRECHA TOTAL
+    → Prioridad: CRÍTICA
+    → Acción: Búsqueda urgente de curso externo
+
+Nivel Avanzado:
+4.7 Desarrollar librería de funciones Python reutilizables
+    → Cobertura: LIMITADA (nivel R)
+    → BRECHA DE PROFUNDIDAD
+
+4.8 Desarrollar pipeline de datos con modelo predictivo + dashboard
+    → Cobertura: LIMITADA (nivel R, M)
+    → BRECHA DE PROFUNDIDAD
+
+4.9 Supervisar implementación de entorno colaborativo (JupyterHub, Git)
+    → Cobertura: MÍNIMA
+    → BRECHA DE PROFUNDIDAD Y EVALUACIÓN
+
+4.10 Proponer plan de modernización tecnológica
+     → Cobertura: MÍNIMA
+     → BRECHA DE EVALUACIÓN
+
+3.5 ÁREA 5: INTELIGENCIA ARTIFICIAL (10 LOs)
+---------------------------------------------
+
+Nivel Básico:
+5.1 Diferenciar tipos de aprendizaje automático
+    → Cobertura: ADECUADA (nivel I, R)
+
+5.2 Identificar casos de uso de IA en auditoría
+    → Cobertura: ADECUADA (nivel I, R)
+
+5.3 Explicar modelo de regresión lineal
+    → Cobertura: ADECUADA (nivel I, R)
+
+Nivel Intermedio:
+5.4 Aplicar algoritmo de clustering
+    → Cobertura: LIMITADA (nivel I, R)
+    → BRECHA DE PROFUNDIDAD
+
+5.5 Entrenar modelo de clasificación
+    → Cobertura: LIMITADA (nivel R)
+    → BRECHA DE PROFUNDIDAD
+
+5.6 Interpretar resultados de modelo ML (métricas)
+    → Cobertura: ADECUADA (nivel R, A)
+
+Nivel Avanzado:
+5.7 Evaluar viabilidad de implementar solución ML
+    → Cobertura: LIMITADA (nivel R, M)
+    → BRECHA DE EVALUACIÓN
+
+5.8 Diseñar modelo de clasificación para predicción de fraude
+    → Cobertura: LIMITADA (nivel M)
+    → BRECHA DE PROFUNDIDAD Y EVALUACIÓN
+
+5.9 Desarrollar modelo de NLP para clasificación de documentos
+    → BRECHA TOTAL o muy limitada
+    → Prioridad: IMPORTANTE
+
+5.10 Diseñar marco estratégico para adopción de IA
+     → Cobertura: MÍNIMA
+     → BRECHA DE PROFUNDIDAD
+
+================================================================================
+4. ANÁLISIS DE BRECHAS CURRICULARES
+================================================================================
+
+4.1 RESUMEN DE BRECHAS IDENTIFICADAS
+-------------------------------------
+
+Total de brechas: 9
+- Brechas totales: 1 (LO sin ninguna cobertura)
+- Brechas de profundidad: 5 (solo nivel I/R, falta M)
+- Brechas de evaluación: 3 (falta código A)
+
+4.2 BRECHAS CRÍTICAS (Acción urgente requerida)
+------------------------------------------------
+
+BRECHA #1: Control de versiones (Git)
+- Código LO: 4.6
+- Descripción: Utilizar sistema de control de versiones (Git) para clonar
+  repositorio, registrar cambios y proponer modificaciones en proyectos
+  colaborativos de análisis de datos
+- Tipo: BRECHA TOTAL
+- Prioridad: CRÍTICA
+- Justificación: Habilidad indispensable para trabajo en equipo reproducible
+  y auditable en proyectos de datos. Sin esto, la colaboración efectiva
+  es imposible.
+- Acción propuesta: URGENTE - Buscar curso externo (ej: GitHub Learning Lab,
+  Coursera Git, o desarrollar curso interno "Git para Auditores")
+
+4.3 BRECHAS IMPORTANTES (Alta prioridad)
+-----------------------------------------
+
+BRECHA #2: Análisis de grafos para detección de colusión
+- Código LO: 2.9
+- Descripción: Idear esquema analítico avanzado para detección de redes
+  de colusión en contratación pública utilizando técnicas de análisis de grafos
+- Tipo: BRECHA TOTAL
+- Prioridad: IMPORTANTE
+- Justificación: El análisis de grafos es una técnica de vanguardia para
+  auditoría de contrataciones. Actualmente no existe oferta formativa que
+  cubra esta área de especialización avanzada.
+- Acción propuesta: Buscar curso externo (BID, universidades especializadas
+  en ciencia de redes, o Neo4j para auditores)
+
+BRECHA #3: Procesamiento de Lenguaje Natural (NLP)
+- Código LO: 5.9
+- Descripción: Desarrollar modelo de NLP para clasificar automáticamente
+  documentos no estructurados según nivel de riesgo
+- Tipo: BRECHA TOTAL o muy limitada
+- Prioridad: IMPORTANTE
+- Justificación: NLP es esencial para procesar grandes volúmenes de documentos
+  textuales en auditorías modernas (denuncias, contratos, informes)
+- Acción propuesta: Buscar socio de cooperación con expertise en NLP aplicado
+
+4.4 BRECHAS DE PROFUNDIDAD (Cobertura parcial)
+-----------------------------------------------
+
+BRECHA #4: Gobernanza de datos avanzada
+- Códigos LO: 1.7, 1.8, 1.9, 1.10
+- Tipo: BRECHA DE PROFUNDIDAD
+- Prioridad: DESEABLE
+- Observación: Hay introducción (nivel I, R) pero falta nivel de Maestría (M)
+  para aplicación práctica completa
+- Acción propuesta: Ampliar contenido de cursos existentes o agregar módulo
+  avanzado de gobernanza de datos
+
+BRECHA #5: Machine Learning aplicado
+- Códigos LO: 5.4, 5.5, 5.7, 5.8
+- Tipo: BRECHA DE PROFUNDIDAD
+- Prioridad: IMPORTANTE
+- Observación: Se introduce ML pero falta práctica hands-on y evaluación formal
+- Acción propuesta: Agregar laboratorios prácticos de ML o curso externo
+  (ej: Coursera ML for Public Sector)
+
+BRECHA #6: Análisis predictivo avanzado
+- Códigos LO: 3.8, 4.7, 4.8
+- Tipo: BRECHA DE PROFUNDIDAD
+- Prioridad: DESEABLE
+- Observación: Se cubren fundamentos pero falta componente de modelado
+  predictivo (regresión múltiple, pipelines ML)
+- Acción propuesta: Desarrollo interno futuro o curso externo especializado
+
+4.5 BRECHAS DE EVALUACIÓN
+--------------------------
+
+BRECHA #7: Evaluación formal en IA aplicada
+- Códigos LO: 5.7, 5.8
+- Tipo: BRECHA DE EVALUACIÓN
+- Prioridad: DESEABLE
+- Observación: Hay cobertura teórica pero ningún curso incluye evaluación
+  sumativa formal (código A)
+- Acción propuesta: Agregar exámenes/proyectos evaluados en cursos existentes
+
+================================================================================
+5. RECOMENDACIONES Y PRÓXIMOS PASOS
+================================================================================
+
+5.1 ACCIONES INMEDIATAS (0-3 meses)
+------------------------------------
+
+1. URGENTE: Identificar y negociar curso de Git/Control de Versiones
+   - Opciones: GitHub Learning Lab, GitLab Learn, o desarrollo interno
+   - Responsable: FT TICs + CCC
+   - Entregable: Convenio firmado o curso desarrollado
+
+2. Completar el diseño del curso GED-006 (El Salvador)
+   - Asegurar que incluya evaluaciones formales (código A)
+   - Validar contenidos con matriz de alineación
+
+3. Validar créditos asignados con proveedores
+   - Confirmar estimaciones de esfuerzo con EFS proveedoras
+   - Ajustar si es necesario
+
+5.2 ACCIONES A MEDIANO PLAZO (3-6 meses)
+-----------------------------------------
+
+1. Buscar socios de cooperación para brechas importantes
+   - Análisis de grafos: contactar BID, universidades
+   - NLP: contactar Coursera, universidades con programas de NLP
+   - ML aplicado: evaluar alianza con IBM, Google (ML Crash Course)
+
+2. Desarrollar contenido para brechas de profundidad
+   - Ampliar módulos de gobernanza de datos en cursos existentes
+   - Agregar laboratorios prácticos de ML
+
+3. Re-ejecutar Paso 2 y 3 (Mapeo y Créditos) con nuevos cursos externos
+   - Actualizar matriz de alineación
+   - Recalcular cobertura
+
+5.3 ACCIONES A LARGO PLAZO (6-12 meses)
+----------------------------------------
+
+1. Implementar sistema de certificación por niveles
+   - Definir requisitos de aprobación por nivel
+   - Crear insignias digitales (badges)
+   - Establecer proceso de evaluación final por nivel
+
+2. Desarrollar cursos para brechas restantes
+   - Regresión múltiple aplicada a auditoría
+   - Indicadores compuestos y métricas de riesgo
+   - Marcos estratégicos de modernización
+
+3. Pilotar la Ruta de Aprendizaje con grupo de funcionarios
+   - Seleccionar 20-30 participantes de diferentes EFS
+   - Recoger feedback
+   - Ajustar contenidos y secuencia
+
+5.4 VALIDACIÓN Y MEJORA CONTINUA
+---------------------------------
+
+1. Convocar panel de revisión (Paso 6 de la Guía)
+   - Incluir miembros de FT no involucrados en mapeo inicial
+   - Incluir representante del CCC
+   - Validar matriz de alineación e informe de brechas
+
+2. Establecer ciclo de actualización anual
+   - Revisar nuevos cursos disponibles
+   - Actualizar LOs según necesidades emergentes
+   - Re-evaluar brechas
+
+================================================================================
+6. CONCLUSIONES
+================================================================================
+
+La Ruta de Aprendizaje en Gestión Estratégica de Datos cuenta con una base
+sólida de 8 cursos que cubren aproximadamente el 82% de los 50 resultados
+de aprendizaje definidos, con un total de 52.5 créditos OLACEFS.
+
+FORTALEZAS:
+✓ Excelente cobertura en fundamentos de datos abiertos (Área 1 - Básico)
+✓ Muy buena cobertura en análisis de datos y limpieza (Área 2 - Básico/Inter.)
+✓ Cobertura robusta en estadística descriptiva (Área 3 - Básico)
+✓ Buena cobertura en Python y SQL básico/intermedio (Área 4)
+✓ Base conceptual sólida en IA (Área 5 - Básico)
+✓ Diversidad de proveedores (5 países representados)
+✓ Predominio de modalidad virtual/MOOC (accesible)
+
+DEBILIDADES:
+✗ Brecha crítica en control de versiones (Git) - LO 4.6
+✗ Ausencia de cursos en análisis de grafos y detección de colusión - LO 2.9
+✗ Poca cobertura en NLP para documentos no estructurados - LO 5.9
+✗ Brechas de profundidad en niveles avanzados (falta código M en varios LOs)
+✗ Pocas evaluaciones formales en LOs avanzados de IA (falta código A)
+✗ Limitada cobertura en modelado predictivo avanzado (regresión múltiple)
+
+OPORTUNIDADES:
+→ Alianzas estratégicas con BID, Banco Mundial, universidades
+→ Desarrollo de contenido interno para brechas específicas de auditoría
+→ Aprovechamiento de cursos masivos abiertos (MOOCs) existentes
+→ Posibilidad de pilotaje con grupo reducido de EFS
+
+RECOMENDACIÓN FINAL:
+La Ruta de Aprendizaje está lista para su implementación en versión 1.0,
+con la condición de que se trabaje en paralelo en la resolución de la brecha
+CRÍTICA de Git (LO 4.6) antes del lanzamiento oficial.
+
+Se recomienda lanzar la ruta en modalidad BETA con un grupo piloto de 20-30
+funcionarios, recoger feedback durante 6 meses, y lanzar versión 2.0 con
+mejoras y nuevos cursos para cubrir brechas importantes.
+
+================================================================================
+ANEXOS
+================================================================================
+
+ANEXO A: Archivos generados
+- RdA_GED_Consolidado_EDITABLE.xlsx (Archivo Excel con 6 hojas)
+- RUTA_DE_APRENDIZAJE_GED_v1.0.md (Documento de la Ruta en Markdown)
+- INFORME_ANALISIS_RdA_GED.txt (Este informe)
+- analisis_mapeo.txt (Análisis técnico de la matriz)
+
+ANEXO B: Metodología aplicada
+Se siguieron los 7 pasos de la "Guía para llevar adelante el mapeo curricular":
+1. Elaboración del COA ✓
+2. Realización del mapeo curricular ✓
+3. Asignación de créditos ✓
+4. Análisis de brechas curriculares ✓
+5. Complemento con socios (pendiente)
+6. Validación y ajuste del mapeo (pendiente)
+7. Diseño de RdA definitiva ✓ (versión 1.0)
+
+ANEXO C: Contactos sugeridos para alianzas
+- BID: Cursos de datos abiertos, Big Data
+- Coursera: ML, Python avanzado, Git
+- GitHub Learning Lab: Control de versiones
+- Neo4j: Análisis de grafos
+- Universidades con programas de Data Science for Public Policy
+
+================================================================================
+FIN DEL INFORME
+================================================================================
